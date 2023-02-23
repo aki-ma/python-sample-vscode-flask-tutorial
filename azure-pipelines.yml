@@ -11,8 +11,8 @@ pool: Default
 steps:
 - script: |
     apt-get update
-    apt-get install pip3
-    python3 -m pip3 install --upgrade pip3
+    apt-get install pip
+    python3 -m pip install --upgrade pip3
     pip3 install -r requirements.txt
   displayName: 'Install dependencies'
 
