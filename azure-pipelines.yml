@@ -8,15 +8,9 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
-strategy:
-  matrix:
-    Python38:
-      python.version: '3.8'
 
 steps:
-- task: UsePythonVersion@0
-  inputs:
-    versionSpec: '$(python.version)'
+- task: UsePythonVersion
   displayName: 'Use Python $(python.version)'
 
 - script: |
